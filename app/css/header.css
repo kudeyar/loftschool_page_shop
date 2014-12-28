@@ -1,3 +1,241 @@
 body {
-    background: green;
+    color: #5c7b98;
+    font-family: elektra_light_proregular;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+header, nav, footer, div {
+    display: block;
+    box-sizing: border-box;
+}
+
+i {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+header a {
+    color:  #00b9fe;
+    font-size: 13px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px; /* Приближение из-за подстановки шрифтов */
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: #613993;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.header__top-line {
+    position: absolute;
+    height: 41px;
+    background: #46636e;
+    width: 100%;
+    left: 0px;
+}
+
+.header__bottom-line {
+    position: absolute;
+    height: 98px;
+    background: #e8eff5;
+    width: 100%;
+    left: 0px;
+    top: 41px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    overflow: hidden;
+    min-width: 993px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: 139px;
+}
+
+.header__top {
+    height: 41px;
+    background: #46636e;
+    padding: 2px 6px;
+}
+
+.header__top-sn {
+    display: inline-block;
+    padding: 0px;
+    margin: 8px 0px 0px;
+    vertical-align: middle;
+    float: left;
+}
+
+.header__top-sn li {
+    display: inline-block;
+    list-style-type: none;
+    text-indent: -999em;
+    margin-left: 2px;
+}
+
+.header__top-sn li:first-child {
+    margin-left: 0px;
+}
+
+.header__top-sn-vk {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -382px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.header__top-sn-fb {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -82px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.header__top-sn-twi {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -292px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.header__top-address {
+    display: inline-block;
+    color: #ffffff;
+    font-style: normal;
+    vertical-align: middle;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 270px;
+}
+
+.header__top-address-address {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.header__top-address-img {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -117px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+.header__top-phone {
+    display: inline-block;
+    color:  #ffffff;
+    font-size: 25px;
+    padding-top: 10px;
+    float: right;
+}
+
+.header__bottom {
+    height: 98px;
+    background: #e8eff5;
+}
+
+.header__bottom-logo {
+    display: inline-block;
+    width: 199px;
+    height: 57px;
+    background: url("/img/logo.png");
+    margin-top: 25px;
+}
+
+.header__bottom-form {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 0px 0px 45px;
+}
+
+.header__bottom-form-input {
+    height: 35px;
+    width: 258px;
+    border: 1px solid #dce6f0;
+    color: #dce6f0;
+}
+
+.header__bottom-form-submit {
+    width: 80px;
+    height: 37px;
+    background: #00b9fe;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: -5px;
+}
+
+.header__bottom-menu {
+    display: inline-block;
+    padding: 0px;
+    margin: 30px 0px 0px;
+    vertical-align: top;
+}
+
+.header__bottom-menu a {
+    vertical-align: middle;
+}
+
+.header__bottom-menu li {
+    display: inline-block;
+    list-style-type: none;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header__bottom-menu li:first-child {
+    margin-left: 10px;
+}
+
+.header__bottom-menu-basket {
+    color:  #00b9fe;
+    font-size: 13px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px; /* Приближение из-за подстановки шрифтов */
+    text-decoration: underline;
+}
+
+.header__bottom-menu-basket:hover {
+    cursor: pointer;
+    background: #ffffff;
+    color: #5c7b98;
+}
+
+.header__bottom-menu-img {
+    background-image: url("/img/sprite.png");
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 15px;
 }
