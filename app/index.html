@@ -6,7 +6,7 @@
     <title>Shop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 </head>
@@ -14,16 +14,17 @@
 
 <div class="wrapper">
     <div class="main">
-        <div class="absolute header__top-line"></div>
-        <div class="absolute header__bottom-line"></div>
+        <div class="header__top-line"></div>
+        <div class="header__bottom-line"></div>
+        <div class="menu__line"></div>
         <div class="container">
 
             <header>
                 <div class="header__top">
                     <ul class="header__top-sn">
-                        <li class="header__top-sn-vk">http://vk.com</li>
-                        <li class="header__top-sn-fb">http://facebook.com</li>
-                        <li class="header__top-sn-twi">http://twitter.com</li>
+                        <li><a href="http://vk.com" class="header__top-sn-vk">http://vk.com</a></li>
+                        <li><a href="http://facebook.com" class="header__top-sn-fb">http://facebook.com</a></li>
+                        <li><a href="http://twitter.com" class="header__top-sn-twi">http://twitter.com</a></li>
                     </ul>
                     <div class="header__top-address">
                         <i class="header__top-address-img"></i>
@@ -43,7 +44,7 @@
                     <form action="" method="post" class="header__bottom-form">
                         <label for="">
                             <input type="search" name="search" class="header__bottom-form-input"
-                                   placeholder="iMac 27 дюймов"/>
+                                   placeholder="iMac 27 дюймов" required/>
                         </label>
                         <input type="submit" name="submit" class="header__bottom-form-submit" value="Поиск">
                     </form>
@@ -57,18 +58,72 @@
             </header>
 
             <nav>
-
+                <ul class="nav__menu">
+                    <li><a href="#" class="nav__menu-a">Мобильные телефоны</a></li>
+                    <li><a href="#" class="nav__menu-a">Планшеты</a></li>
+                    <li><a href="#" class="nav__menu-a">Мр3 плееры</a></li>
+                    <li><a href="#" class="nav__menu-a">Персональные компьютеры</a></li>
+                    <li><a href="#" class="nav__menu-a">Ноутбуки</a></li>
+                    <li><a href="#" class="nav__menu-a">Apple TV</a></li>
+                    <li><a href="#" class="nav__menu-a">Аксессуары</a></li>
+                </ul>
             </nav>
 
             <div class="content">
-
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet dignissimos, dolore dolores ipsa minus
+                modi nulla officia qui quibusdam quisquam quo rem repellendus vel voluptas. Consequatur incidunt
+                quisquam tempore.
             </div>
 
-            <footer>
-
-            </footer>
         </div>
     </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer__logo"></div>
+
+        <div class="footer__links-shop">
+            <h4>О магазине</h4>
+            <ul class="footer__links-razdel">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Наши цены</a></li>
+                <li><a href="">Наши скидки</a></li>
+                <li><a href="">Акции</a></li>
+            </ul>
+        </div>
+        <div class="footer__links-shop">
+            <h4>Каталог</h4>
+            <ul class="footer__links-razdel">
+                <li><a href="">Смартфоны</a></li>
+                <li><a href="">Планшеты</a></li>
+                <li><a href="">Компьютеры</a></li>
+                <li><a href="">Аксессуары</a></li>
+            </ul>
+        </div>
+        <div class="footer__links-shop">
+            <h4>Контакты</h4>
+            <ul class="footer__links-razdel">
+                <li><a href="">Телефоны</a></li>
+                <li><a href="">Адреса</a></li>
+                <li><a href="">Карта проезда</a></li>
+                <li><a href="">Обраная связь</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__links-shop footer__right">
+            <ul class="footer__links-shop-store">
+                <li><a href="https://play.google.com/store?hl=ru" class="footer__links-app">https://play.google.com/store?hl=ru</a></li>
+                <li><a href="https://appstrore.apple.com/" class="footer__links-google">https://appstrore.apple.com/</a></li>
+            </ul>
+            <ul class="footer__links-sn">
+                <li><a href="http://vk.com" class="footer__links-sn-vk">http://vk.com</a></li>
+                <li><a href="http://facebook.com" class="footer__links-sn-fb">http://facebook.com</a></li>
+                <li><a href="http://twitter.com" class="footer__links-sn-twi">http://twitter.com</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </div>
 
 <script src="bower_components/jquery/jquery.js"></script>

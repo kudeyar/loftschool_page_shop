@@ -49,6 +49,16 @@ header a:hover {
     top: 41px;
 }
 
+.menu__line {
+    position: absolute;
+    height: 40px;
+    background: #f7f7f7;
+    width: 100%;
+    left: 0px;
+    top: 139px;
+    border: 1px solid #e3e3e3;
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -85,8 +95,12 @@ header {
 .header__top-sn li {
     display: inline-block;
     list-style-type: none;
-    text-indent: -999em;
     margin-left: 2px;
+}
+
+.header__top-sn a {
+    display: inline-block;
+    text-indent: -999em;
 }
 
 .header__top-sn li:first-child {

@@ -1,0 +1,120 @@
+footer {
+    position: absolute;
+    height: 228px;
+    /*margin-top: -228px;*/
+    background: url("/img/footer.png");
+    width: 100%;
+    left: 0px;
+    /*bottom: 0px;*/
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+.footer__logo {
+    display: inline-block;
+    width: 139px;
+    height: 39px;
+    background: url("/img/logo_footer.png");
+    margin-top: 100px;
+    vertical-align: top;
+}
+
+footer h4 {
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.footer__links-razdel {
+    margin-top: 0px;
+}
+
+.footer__links-shop {
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.footer__links-razdel li {
+    list-style-type: none;
+}
+
+.footer__links-app {
+    background-image: url("/img/appstore.png");
+    width: 90px;
+    height: 32px;
+    display: inline-block;
+}
+
+.footer__links-shop-store {
+    padding: 0px;
+}
+
+.footer__links-google {
+    background-image: url("/img/google.png");
+    width: 90px;
+    height: 32px;
+    display: inline-block;
+}
+
+.footer__links-sn {
+    display: inline-block;
+    padding: 0px;
+    margin: 8px 0px 0px;
+    vertical-align: middle;
+    float: left;
+}
+
+.footer__right li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 2px;
+}
+
+.footer__right a {
+    display: inline-block;
+    text-indent: -999em;
+}
+
+.footer__links-sn li:first-child {
+    margin-left: 0px;
+}
+
+.footer__links-sn-vk {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -328px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 40px;
+    display: inline-block;
+}
+
+.footer__links-sn-fb {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -28px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 40px;
+    display: inline-block;
+}
+
+.footer__links-sn-twi {
+    background-image: url("/img/sprite.png");
+    background-position: 0 -238px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 40px;
+    display: inline-block;
+}
+
+.footer__right {
+    float: right;
+    margin-top: 50px;
+}
