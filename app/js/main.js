@@ -19,7 +19,9 @@ $(document).ready(function(){
         })
     })
 
-
+$('.header__bottom-menu-basket').mouseover(function(){
+    $('.header__bottom-menu-dropdownmenu').slideToggle();
+})
 
 
 

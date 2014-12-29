@@ -16,7 +16,7 @@ i {
 }
 
 header a {
-    color:  #00b9fe;
+    color: #00b9fe;
     font-size: 13px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 20px; /* Приближение из-за подстановки шрифтов */
@@ -168,14 +168,26 @@ header {
     margin-right: 5px;
 }
 
-
-
 .header__top-phone {
     display: inline-block;
-    color:  #ffffff;
-    font-size: 25px;
     padding-top: 10px;
     float: right;
+}
+
+.header__top-phone a {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header__top-phone a:hover {
+    color: #ffffff;
+}
+
+.header__top-phone-code {
+    color: #00b9fe;
+    font-size: 15px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700
 }
 
 .header__bottom {
@@ -239,7 +251,7 @@ header {
 }
 
 .header__bottom-menu-basket {
-    color:  #00b9fe;
+    color: #00b9fe;
     font-size: 13px; /* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 20px; /* Приближение из-за подстановки шрифтов */
@@ -260,4 +272,35 @@ header {
     height: 17px;
     display: inline-block;
     margin-right: 15px;
+}
+
+.header__bottom-menu-dropdownmenu {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 100;
+    left: 846px;
+    padding: 0px;
+    width: 200px;
+}
+
+.header__bottom-menu-dropdownmenu li {
+    vertical-align: middle;
+    height: 51px;
+    padding: 5px;
+}
+
+.header__bottom-menu-dropdownmenu li:first-child {
+    margin-left: 0px;
+}
+
+.header__bottom-menu-dropdownmenu-img {
+    display: inline-block;
+    float: left;
+    margin: 0 10px 0px 0;
+    height: 51px;
+}
+
+.header__bottom-menu-dropdownmenu a {
+    padding: 20px;
 }
