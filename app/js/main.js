@@ -53,4 +53,19 @@ $(document).ready(function () {
         });
     }
 
+    /* up button */
+    $('.up-button').hide;
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.up-button').fadeIn();
+        } else {
+            $('.up-button').fadeOut();
+        }
+    });
+    $('.up-button').on('click', function(e){
+        e.preventDefault();
+
+        $('body, html').animate({scrollTop: 0}, 300);
+    });
+
 });
