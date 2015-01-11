@@ -54,7 +54,7 @@ $(document).ready(function () {
     }
 
     /* up button */
-    $('.up-button').hide;
+    $('.up-button').css('display', 'none');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.up-button').fadeIn();
