@@ -44,4 +44,13 @@ $(document).ready(function () {
         });
     }
 
+    /* columns */
+
+    if ($('.about__text').length) {
+        $('.about__text').columnize({
+            width: 300,
+            columns: 3
+        });
+    }
+
 });
