@@ -148,3 +148,38 @@
     font-weight: 700;
     line-height: 20px;
 }
+
+.up-button {
+    position: fixed;
+    right: 13px;
+    bottom: 250px;
+    display: block;
+    width: 77px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background: #00b9fe;;
+    text-decoration: none;
+}
+
+.up-button:before, .up-button:after {
+               content: "";
+               display: block;
+               position: absolute;
+               width: 9px;
+               height: 5px;
+               left: 50%;
+               margin-left: -4px;
+           }
+
+.up-button:before {
+     background: url("/img/up-top.png") 0 0 no-repeat;
+     top: -5px;
+ }
+
+.up-button:after {
+     background: url("/img/up-bottom.png") 0 0 no-repeat;
+     bottom: 0px;
+ }
