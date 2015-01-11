@@ -1,11 +1,10 @@
-footer {
+.footer {
     position: absolute;
     height: 228px;
-    /*margin-top: -228px;*/
-    background: url("/img/footer.png");
+    background: #613993;
+    background-image: url("/img/footer.png");
     width: 100%;
     left: 0px;
-    /*bottom: 0px;*/
     color: #ffffff;
 }
 

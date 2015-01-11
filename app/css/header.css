@@ -199,7 +199,7 @@ header {
     display: inline-block;
     width: 199px;
     height: 57px;
-    background: url("/img/logo.png");
+    background: url("/img/logo.png") no-repeat;
     margin-top: 25px;
 }
 
@@ -211,9 +211,11 @@ header {
 
 .header__bottom-form-input {
     height: 35px;
-    width: 258px;
+    width: 240px;
     border: 1px solid #dce6f0;
     color: #dce6f0;
+    line-height: 2;
+    padding-left: 11px;
 }
 
 .header__bottom-form-submit {
@@ -256,12 +258,7 @@ header {
     font-weight: 400;
     line-height: 20px; /* Приближение из-за подстановки шрифтов */
     text-decoration: underline;
-}
-
-.header__bottom-menu-basket:hover {
-    cursor: pointer;
-    background: #ffffff;
-    color: #5c7b98;
+    position: relative;
 }
 
 .header__bottom-menu-img {
@@ -279,28 +276,70 @@ header {
     position: absolute;
     background: #ffffff;
     z-index: 100;
-    left: 846px;
+    left: -120px;
+    top: 44px;
     padding: 0px;
-    width: 200px;
+    width: 245px;
+    border: 1px solid #dce6f0;
+}
+
+.active {
+    cursor: pointer;
+    background: #ffffff;
+    color: #5c7b98;
 }
 
 .header__bottom-menu-dropdownmenu li {
-    vertical-align: middle;
-    height: 51px;
-    padding: 5px;
+    border-top: 1px solid #dce6f0;
+    padding: 0px;
+    height: 60px;
+    overflow: hidden;
 }
 
 .header__bottom-menu-dropdownmenu li:first-child {
+    border-top: none;
     margin-left: 0px;
 }
 
-.header__bottom-menu-dropdownmenu-img {
-    display: inline-block;
-    float: left;
-    margin: 0 10px 0px 0;
-    height: 51px;
+.header__basket-inner {
+    display: block;
+    clear: both;
+    height: 60px;
 }
 
-.header__bottom-menu-dropdownmenu a {
-    padding: 20px;
+.header__bottom-menu-dropdownmenu-img {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.header__bottom-menu-dropdownmenu-img img {
+    display: block;
+    max-width: 60px;
+    max-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header__basket-text--wrap {
+    float: right;
+    width: 185px;
+}
+
+.header__bottom-menu-dropdownmenu_text {
+    width: 150px;
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.header__bottom-menu-dropdownmenu a:hover {
+    background: rgba(238, 242, 244, 0.4);
 }
