@@ -37,7 +37,7 @@
 }
 
 .content__product-info h3 {
-    color:  #00b9fe;
+    color: #00b9fe;
     font-size: 25px; /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     line-height: 20px;
@@ -59,44 +59,81 @@
     padding-left: 10px;
 }
 
-.img_active {
-    border: 1px solid #00b9fe;
+.content__product-slider-display {
+    position: relative;
+    height: 250px;
+    margin-bottom: 10px;
+    width: 307px;
 }
 
 .content__product-slider-display-img {
     display: block;
-    height: 238px;
-    margin: 0 auto;
+    position: absolute;
+    height: 250px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 
-.content__product-slider-list li {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 8px;
-    height: 75px;
-    float: left;
-}
-
-.content__product-slider-list {
-    height: 75px;
-    overflow: hidden;
-    width: 1000px;
-    padding-left: 20px;
-}
-
-.content__product-slider-list a {
-    display: inline-block;
-}
-.content__product-slider-list-item-img {
+.content__product-slider-linkimg {
     display: block;
-    max-width: 75px;
-    max-height: 75px;
+    position: relative;
+    width: 75px;
+    height: 75px;
 }
 
+.bx-prev, .bx-next {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    background: url("/img/slider-btns.png") 0 0 no-repeat;
+    width: 16px;
+    height: 34px;
+    margin-top: -17px;
+    color: #ffffff;
+    line-height: 34px;
+}
 
+.bx-prev {
+    background-position: 0 0;
+    left: 0;
+    padding-right: 6px;
+    text-align: right;
+}
 
+.bx-next {
+    background-position: right 0;
+    right: 0;
+    padding-left: 6px;
+}
 
+.content__product-slider-list-item-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
+.content__product-slider-list-item {
+    float: left;
+    list-style-type: none;
+    border: 1px solid #ffffff;
+    top: -16px;
+}
+
+.img_active {
+    border: 1px solid #00b9fe;
+}
+
+.content__product-slider-itemss {
+    position: relative;
+}
 
 .content__column_text {
     margin: 50px 0px;
